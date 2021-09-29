@@ -76,8 +76,8 @@ type CustomItem = CustomFeed['Item']
 
 ## Types
 
-- [Feed](./types/feed)
-- [Attachment](./types/attachment)
-- [Author](./types/author)
-- [Hub](./hub)
-- [Item](./item)
+- [Feed](./types/feed.ts)
+- [Attachment](./types/attachment.ts)
+- [Author](./types/author.ts)
+- [Hub](./types/hub.ts)
+- [Item](./types/item.ts)
