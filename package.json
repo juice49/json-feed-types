@@ -1,0 +1,9 @@
+{
+  "name": "@json-feed-types/root",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}

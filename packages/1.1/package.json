@@ -1,0 +1,31 @@
+{
+  "name": "@json-feed-types/1.1",
+  "version": "1.0.0",
+  "description": "TypeScript types for JSON Feed 1.1.",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juice49/json-feed-types.git"
+  },
+  "keywords": [
+    "json",
+    "feed",
+    "typescript",
+    "types",
+    "json feed",
+    "jsonfeed"
+  ],
+  "author": "Ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juice49/json-feed-types/issues"
+  },
+  "homepage": "https://github.com/juice49/json-feed-types#readme",
+  "devDependencies": {
+    "@json-feed-types/common": "^1.0.0",
+    "type-fest": "^2.3.4"
+  }
+}
