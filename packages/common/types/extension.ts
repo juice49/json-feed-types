@@ -1,3 +1,8 @@
-type Extension = Record<`_${string}`, Record<string, string | number | boolean>>
+type ExtensionEntry = string | number | boolean
+
+type Extension = Record<
+  `_${string}`,
+  Record<string, ExtensionEntry | ExtensionEntry[]>
+>
 
 export default Extension
