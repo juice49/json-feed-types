@@ -24,8 +24,8 @@
     "url": "https://github.com/juice49/json-feed-types/issues"
   },
   "homepage": "https://github.com/juice49/json-feed-types#readme",
-  "devDependencies": {
-    "@json-feed-types/common": "^1.0.0",
+  "dependencies": {
+    "@json-feed-types/common": "^1.0.1",
     "type-fest": "^2.3.4"
   }
 }
