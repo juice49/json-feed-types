@@ -5,13 +5,13 @@ TypeScript types for JSON Feed 1.1.
 ## Installation
 
 ```
-npm install --save-dev @json-feed-types/1.1
+npm install --save-dev @json-feed-types/1_1
 ```
 
 ## Usage
 
 ```
-import Feed from '@json-feed-types/1.1'
+import Feed from '@json-feed-types/1_1'
 
 const feed: Feed = {
   version: 'https://jsonfeed.org/version/1.1',
