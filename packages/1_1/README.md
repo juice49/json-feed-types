@@ -32,13 +32,23 @@ const feed: Feed = {
 }
 ```
 
-### Extensions
+## Types
+
+- [Feed](./types/feed.ts)
+- [Attachment](./types/attachment.ts)
+- [Author](./types/author.ts)
+- [Hub](./types/hub.ts)
+- [Item](./types/item.ts)
+
+## Extensions
 
 > Publishers can use custom objects in JSON Feeds. Names must start with an \_ character followed by a letter. Custom objects can appear anywhere in a feed.
 
-The JSON Feed types are generic. To define extensions, provide a map:
+The `Feed`, `Author`, `Item`, `Attachment`, and `Hub` types are generic. To define extensions, provide a map:
 
 ```
+import Feed from '@json-feed-types/1_1'
+
 type CustomFeed = Feed<{
   feed: {
     _meta: {
@@ -68,16 +78,68 @@ type CustomFeed = Feed<{
 }>
 ```
 
-The map of extensions can be passed to any of the types, or you can access them via your custom `Feed` type:
+```
+import { Item } from '@json-feed-types/1_1'
+
+type CustomItem = Item<{
+  feed: {
+    _meta: {
+      copyright: string
+    }
+  }
+  author: {
+    _meta: {
+      id: string
+    }
+  }
+  item: {
+    _meta: {
+      type: 'SHORT_EPISODE' | 'LONG_EPISODE' | 'SPECIAL_EVENT'
+    }
+  }
+  attachment: {
+    _image?: {
+      dimensions: [width: number, height: number]
+    }
+  }
+  hub: {
+    _meta: {
+      instructions: string
+    }
+  }
+}>
+```
+
+The `ExtensionMap` type from `@json-feed-types/common` can be used to define an extension map outside of the generic types:
 
 ```
-type CustomItem = CustomFeed['Item']
+import { ExtensionMap } from '@json-feed-types/common'
+
+type MyExtensionMap: ExtensionMap = {
+  feed: {
+    _meta: {
+      copyright: string
+    }
+  }
+  author: {
+    _meta: {
+      id: string
+    }
+  }
+  item: {
+    _meta: {
+      type: 'SHORT_EPISODE' | 'LONG_EPISODE' | 'SPECIAL_EVENT'
+    }
+  }
+  attachment: {
+    _image?: {
+      dimensions: [width: number, height: number]
+    }
+  }
+  hub: {
+    _meta: {
+      instructions: string
+    }
+  }
+}
 ```
-
-## Types
-
-- [Feed](./types/feed.ts)
-- [Attachment](./types/attachment.ts)
-- [Author](./types/author.ts)
-- [Hub](./types/hub.ts)
-- [Item](./types/item.ts)
