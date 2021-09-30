@@ -1,5 +1,5 @@
 {
-  "name": "@json-feed-types/1.1",
+  "name": "@json-feed-types/1_1",
   "version": "1.0.0",
   "description": "TypeScript types for JSON Feed 1.1.",
   "types": "./index.d.ts",
