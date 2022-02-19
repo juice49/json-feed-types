@@ -1,4 +1,5 @@
 export { default } from './types/feed'
+export { default as Feed } from './types/feed'
 export { default as Attachment } from './types/attachment'
 export { default as Author } from './types/author'
 export { default as Hub } from './types/hub'
