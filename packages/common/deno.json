@@ -1,0 +1,5 @@
+{
+  "name": "@json-feed-types/common",
+  "version": "1.0.2",
+  "exports": "./index.d.ts"
+}
